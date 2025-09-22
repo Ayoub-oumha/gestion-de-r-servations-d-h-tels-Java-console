@@ -1,18 +1,18 @@
 package Model;
 
 public class Hotel {
-    private int hotelId;
+    private String hotelId;
     private String name;
     private String address;
     private int availableRooms;
     private double rating;
 
     //  Getter et Setter pour hotelId
-    public int getHotelId() {
+    public String getHotelId() {
         return hotelId;
     }
 
-    public void setHotelId(int hotelId) {
+    public void setHotelId(String hotelId) {
         this.hotelId = hotelId;
     }
 
@@ -49,6 +49,14 @@ public class Hotel {
     }
 
     public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public Hotel(String hotelId, String name, String address, int availableRooms, double rating) {
+        this.hotelId = hotelId;
+        this.name = name;
+        this.address = address;
+        this.availableRooms = availableRooms;
         this.rating = rating;
     }
 }

@@ -5,7 +5,7 @@ import Model.Role;
 import Repositories.ClientRepository;
 
 public class AuthService {
-    private ClientRepository clientRepo;
+    private final ClientRepository clientRepo;
     private Client currentUser;
 
     public AuthService(ClientRepository clientRepo) {
